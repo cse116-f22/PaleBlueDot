@@ -51,7 +51,7 @@ object PaleBlueDot {
    */
 
   /**
-   * Returns a Map[cityName -> population] for all cities in the given county. The name of each
+   * Returns a Map[cityName -> population] for all cities in the given region of a county. The name of each
    * city should match exactly how it appears in citiesFilename and the population is read from the file
    * and converted to an Int. The country name may contain any mix of upper/lower-case letters.
    *
@@ -59,7 +59,7 @@ object PaleBlueDot {
    * @param citiesFilename    Name of the file containing city name, population, and location data
    * @param countryName       The name of the country with any mix of upper/lower-case
    * @param regionCode        Two digit region code with case matching the case from the cities file
-   * @return A Map containing the name and population of every city in the given country
+   * @return A Map containing the name and population of every city in the given region of the country
    */
   def cityPopulations(countriesFilename: String, citiesFilename: String, countryName: String, regionCode: String): Map[String, Int] = {
 
